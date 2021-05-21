@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Social LAGA | Registro</title>
+    <meta name="robots" content="noindex">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="./assets/img/favicon.png"/>
+	<!-- Devicon CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+	<!-- Animate CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- My own CSS -->
+	<link rel="stylesheet" href="./assets/css/accesoYregistro.css">
+</head>
+<body>
+	<div class="contenedor">
+		<div class="comandos">
+			<ul>
+				<li>Alt + F | <small>Acceder con Facebook</small></li>
+				<li>Alt + G | <small>Acceder con Google</small></li>
+				<li>Alt + U | <small>Ingresar usuario</small></li>
+				<li>Alt + C | <small>Ingresar contraseña</small></li>
+				<li>Enter 	| <small>presionar</small></li>
+				<li>Alt + A | <small>Quiero ingresar</small></li>
+			</ul>
+		</div>
+		<div class="login">
+			<form class="formulario">
+				<span class="titulo">Crear cuenta</span>
+				<button type="button" class="btnFB" id="btnFB">
+					<i class="devicon-facebook-plain"></i>Facebook
+				</button>
+				<button type="button" class="btnGG" id="btnGG">
+					<img src="./assets/img/logoGG.png" alt="GOOGLE">Google
+				</button>
+				<div class="usuario"><span>Usuario</span></div>
+				<div class="input-contenedor">
+					<input class="txtUsuario" type="text" id="txtUsuario">
+					<span class="inputBorder"></span>
+				</div>
+				<div class="contrasenia">
+					<span>Contraseña</span>
+					<a class="linkContraO" id="linkContraO"></a>
+				</div>
+				<div class="input-contenedor">
+					<input class="txtContrasenia" type="password" id="txtContrasenia">
+					<span class="inputBorder"></span>
+				</div>
+				<div class="CbtnIngresarCrear">
+					<button class="btnIngresarCrear" id="btnIngresarCrear" type="button">Registrarme</button>
+				</div>
+				<div class="sinCuenta">
+					<span>Ya tienes una cuenta?</span>
+					<a class="linkCrearIngresar" id="linkCrearIngresar">Ingresar</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+    <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyAVk8MYXI-ku91JPcBUYbvvjdHoBo_p8dQ",
+          authDomain: "social-laga.firebaseapp.com",
+          databaseURL: "https://social-laga.firebaseio.com",
+          projectId: "social-laga",
+          storageBucket: "social-laga.appspot.com",
+          messagingSenderId: "1020931431985",
+          appId: "1:1020931431985:web:0a1d97835d840a0c963f10"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+	<!-- JQuery CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" crossorigin="anonymous"
+        integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==">
+    </script>
+	<!-- Sweet Alert 2 CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<!-- My own JS -->
+	<script src="./assets/js/accesoYregistro.js"></script>
+</body>
+</html>

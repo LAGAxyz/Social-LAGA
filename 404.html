@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+    <meta name="robots" content="noindex">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header{
+            width: 100%;
+            color: white;
+            font-size: 20px;
+            padding: 15px 0px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #21618C;
+        }
+        main{
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+        footer{
+            width: 100%;
+            text-align: center;
+            padding: 10px 0px;
+            background-color: #21618C;
+        }
+        button{
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            border: 2px solid white;
+            background-color: #21618C;
+        }
+        button:hover{
+            color: #21618C;
+            border: 2px solid #222;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Página no encontrada</h2>
+    </header>
+    <main>
+        <img src="./assets/img/404.jpg" alt="Error 404">
+    </main>
+    <footer>
+        <button onclick="volver()">Volver a la página principal</button>
+    </footer>
+    <script>
+        const volver = ()=> {
+            location.href = "./index.html"
+        }
+    </script>
+</body>
+</html>
