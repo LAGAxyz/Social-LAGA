@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{background-color: #5085ff80;}
+
+nav span{
+    width: auto;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.link{cursor: pointer;}
+
+main, .row{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: calc(100vh - 66px);
+}
+
+aside{
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #cccccc80;
+}
+
+.contactos div{
+    color: #dadada;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.contactos div:hover{
+    cursor: pointer;
+}
+
+section{
+    width: calc(100% - 350px);
+    height: 100%;
+    background-color: #ffffff80;
+}
+
+.panel{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barra-top{
+    color: black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.barra-top span{
+    width: 350px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.chat{
+    width: 100%;
+    height: calc(100% - 120px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.barra-bottom{
+    width: 100%;
+    height: 60px;
+}
+
+@media (max-width: 700px){
+    aside{display: none;}
+    section{width: 100%;}
+    nav span{display: none;}
+}
