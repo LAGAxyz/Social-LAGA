@@ -23,6 +23,8 @@ const mostrarContra = ()=>{txtContrasenia.setAttribute("type", "text");};
 const ocultarContra = ()=>{txtContrasenia.setAttribute("type", "password");};
 
 const irAcrearOingresar = ()=>{
+    console.log("digamos que esto es un error");
+    
     linkCrearIngresar.innerText==="Ingresar" ?
     location.href = "./acceso.html" :
     location.href = "./registro.html"
